@@ -1,0 +1,4 @@
+name = "HarmonicTrapTrajectories"
+uuid = "ad2dca26-64dd-404d-85e5-9ead3a89e3f7"
+authors = ["Sam W <sw104@users.noreply.github.com>"]
+version = "0.1.0"
