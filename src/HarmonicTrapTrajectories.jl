@@ -112,6 +112,6 @@ classical trajectory is the `MinimumJerk` trajectory and the harmonic trap frequ
 """
 function fractional_trajectory(trajectory::LewisRiesenfeld{MinimumJerk}, t::Number, ω::Number)
   s = t / trajectory.t;
-  return (60s - 180s^2 + 120s^3) / (trajectory.t^2 * ω^2) + fractional_trajectory(trajectory.classical, t);
+  return (60s - 180s^2 + 120s^3) / (trajectory.t * ω)^2 + fractional_trajectory(trajectory.classical, t);
 end
 end # module
